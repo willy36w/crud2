@@ -24,7 +24,7 @@ foreach ($data as $key => $value) {
                 圖片 :<img src="" alt="" id="preview">
             </td>
             <td><input type="file" name="item" id="item"></td>
-            <td><input type="number" name="order_id" max="10" min="1"></td>
+            <td><input type="number" name="order_id" max="10" min="1" required></td>
             <?php
             if (!empty($_GET['existNum'])) {
                 $data = $Pictures->all();
